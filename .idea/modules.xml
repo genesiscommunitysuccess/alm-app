@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM.ALM-dictionary-cache.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM.ALM-dictionary-cache.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-fields/ALM.ALM-dictionary-cache.ALM-generated-fields.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-fields/ALM.ALM-dictionary-cache.ALM-generated-fields.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-dao/ALM.ALM-dictionary-cache.ALM-generated-dao.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-dao/ALM.ALM-dictionary-cache.ALM-generated-dao.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-view/ALM.ALM-dictionary-cache.ALM-generated-view.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-view/ALM.ALM-dictionary-cache.ALM-generated-view.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-hft/ALM.ALM-dictionary-cache.ALM-generated-hft.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-hft/ALM.ALM-dictionary-cache.ALM-generated-hft.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-sysdef/ALM.ALM-dictionary-cache.ALM-generated-sysdef.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/build/internal-modules/ALM-dictionary-cache/ALM-generated-sysdef/ALM.ALM-dictionary-cache.ALM-generated-sysdef.main.iml" />
+    </modules>
+  </component>
+</project>
