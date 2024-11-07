@@ -8,28 +8,18 @@ Asset Liability Management
 
 # Introduction
 
-## Next Steps
+The Asset Liability Management application covers the booking, amendment and cancellation of FX Cash trades. It provides a number of common requirements and features of a typical trading space:
 
-To get a simple application running check the [Quick Start](https://learn.genesis.global/docs/getting-started/quick-start/) guide.
+- The application builds a currency-movement ladder from the FX Cash trades, showing aggregate movements by currency and date.
+- It consumes and displays ticking market data from a Kafka channel.
+- A series of Certificates of Deposit transactions are imported from a csv feed file and added into the aggregate cash-movement ladder as data arrives or is modified.
+- Loan transactions are sourced via a Rest API call and are added into the aggregate cash-movement ladder as data arrives or is modified.
 
-If you need an introduction to the Genesis platform and its modules it's worth heading [here](https://learn.genesis.global/docs/getting-started/learn-the-basics/simple-introduction/).
+
+There are detailed instructions and step-by-step guide on how to build the application available here:
+https://learn.genesis.global/docs/how-to/alm-app/ht-alm-intro/
 
 
-## Project Structure
-
-This project contains **server** and **client** directories which contain the server and client code respectively.
-
-### Server
-
-The server code for this project can be found [here](./server/README.md).
-It is built using a DSL-like definition based on the Kotlin language: GPAL.
-
-When first opening the project, if you receive a notification from IntelliJ IDE detecting Gradle project select the option to 'Load as gradle project'.
-
-### Web Client
-
-The Web client for this project can be found [here](./client/README.md). It is built using Genesis's next
-generation web development framework, which is based on Web Components.
 
 # License
 
