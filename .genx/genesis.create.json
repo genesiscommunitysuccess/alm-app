@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "1.128.7",
-    "generated": "Fri, 11 Oct 2024 10:12:54 GMT"
+    "generated": "Fri, 11 Oct 2024 10:18:38 GMT"
   },
   "data": {
     "projectName": "ALM",
@@ -648,7 +648,7 @@
           "source": {
             "type": "file",
             "format": "CSV",
-            "path": "ALM/server/ALM-app/src/main/genesis/data/loadData",
+            "path": "server/ALM-app/src/main/genesis/data/loadData",
             "prefix": "CDs"
           }
         }
@@ -3056,7 +3056,28 @@
       "framework": "web components"
     },
     "views": [],
-    "PBCs": [],
+    "PBCs": [
+      {
+        "id": "pbc-auth-seed",
+        "config": {}
+      },
+      {
+        "id": "pbc-notify-seed",
+        "config": {
+          "notificationEntities": "[\"FX_TRADE\",\"ENTITY\",\"BOOK\",\"CLIENT\",\"POSITION\",\"LOAN_TRADE\",\"CD_TRADE\",\"FX_RATE\"]"
+        }
+      },
+      {
+        "id": "pbc-reporting-seed",
+        "config": {
+          "reportingQueries": "[\"ALL_FX_TRADES\",\"ALL_ENTITYS\",\"ALL_BOOKS\",\"ALL_CLIENTS\",\"ALL_POSITIONS\",\"ALL_LOAN_TRADES\",\"ALL_CD_TRADES\",\"ALL_FX_RATES\",\"FX_TRADE\",\"FX_TRADE_AUDIT\",\"ENTITY\",\"ENTITY_AUDIT\",\"BOOK\",\"BOOK_AUDIT\",\"CLIENT\",\"CLIENT_AUDIT\",\"POSITION\",\"LOAN_TRADE\",\"LOAN_TRADE_AUDIT\",\"CD_TRADE\",\"CD_TRADE_AUDIT\",\"FX_RATE\"]"
+        }
+      },
+      {
+        "id": "pbc-documents-seed",
+        "config": {}
+      }
+    ],
     "csv": [
       {
         "name": "FX_TRADE",
@@ -3171,13 +3192,7 @@
       }
     ],
     "userOverrides": null,
-    "deliveryConfig": {
-      "method": "cloud-workspace",
-      "fileSuffix": "2024-10-11_111253"
-    },
-    "telemetry": {
-      "deviceId": "a9d0f76d-79d0-404b-9ba2-ee0032908529",
-      "sessionId": "ccc11b45-5911-45cc-abd4-a46b736bbbc0"
-    }
+    "deliveryConfig": null,
+    "telemetry": null
   }
 }
