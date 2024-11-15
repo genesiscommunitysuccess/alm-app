@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "1.128.7",
-    "generated": "Fri, 11 Oct 2024 10:18:38 GMT"
+    "version": "1.145.0",
+    "generated": "Fri, 15 Nov 2024 16:03:00 GMT"
   },
   "data": {
     "projectName": "ALM",
@@ -316,16 +316,12 @@
           "id": null,
           "name": null,
           "fields": [
-            "CURRENCY"
+            "CURRENCY",
+            "SETTLEMENT_DATE"
           ],
           "indexType": "UNIQUE"
         },
         "fields": [
-          {
-            "name": "AMOUNT",
-            "nullable": false,
-            "type": "DOUBLE"
-          },
           {
             "name": "CURRENCY",
             "type": "STRING",
@@ -335,6 +331,11 @@
             "name": "SETTLEMENT_DATE",
             "type": "DATE",
             "nullable": false
+          },
+          {
+            "name": "AMOUNT",
+            "nullable": false,
+            "type": "DOUBLE"
           }
         ],
         "generatedFields": [],
@@ -344,17 +345,17 @@
         "realtimeQuery": {
           "queryName": "ALL_POSITIONS",
           "fields": [
-            "AMOUNT",
             "CURRENCY",
-            "SETTLEMENT_DATE"
+            "SETTLEMENT_DATE",
+            "AMOUNT"
           ]
         },
         "indices": [],
         "meta": {
           "attrOrder": [
-            "AMOUNT",
             "CURRENCY",
-            "SETTLEMENT_DATE"
+            "SETTLEMENT_DATE",
+            "AMOUNT"
           ]
         }
       },
@@ -554,16 +555,12 @@
           "id": null,
           "name": null,
           "fields": [
+            "TARGET_CURRENCY",
             "SOURCE_CURRENCY"
           ],
           "indexType": "UNIQUE"
         },
         "fields": [
-          {
-            "name": "RATE",
-            "nullable": false,
-            "type": "DOUBLE"
-          },
           {
             "name": "TARGET_CURRENCY",
             "type": "STRING",
@@ -573,6 +570,11 @@
             "name": "SOURCE_CURRENCY",
             "type": "STRING",
             "nullable": false
+          },
+          {
+            "name": "RATE",
+            "nullable": false,
+            "type": "DOUBLE"
           }
         ],
         "generatedFields": [],
@@ -582,17 +584,17 @@
         "realtimeQuery": {
           "queryName": "ALL_FX_RATES",
           "fields": [
-            "RATE",
             "TARGET_CURRENCY",
-            "SOURCE_CURRENCY"
+            "SOURCE_CURRENCY",
+            "RATE"
           ]
         },
         "indices": [],
         "meta": {
           "attrOrder": [
-            "RATE",
             "TARGET_CURRENCY",
-            "SOURCE_CURRENCY"
+            "SOURCE_CURRENCY",
+            "RATE"
           ]
         }
       }
@@ -625,6 +627,13 @@
               {
                 "outputField": "CURRENCY",
                 "inputField": "SOURCE_CURRENCY",
+                "meta": {
+                  "alias": null
+                }
+              },
+              {
+                "outputField": "SETTLEMENT_DATE",
+                "inputField": "SETTLEMENT_DATE",
                 "meta": {
                   "alias": null
                 }
@@ -3123,9 +3132,9 @@
       {
         "name": "POSITION",
         "fields": [
-          "AMOUNT",
           "CURRENCY",
-          "SETTLEMENT_DATE"
+          "SETTLEMENT_DATE",
+          "AMOUNT"
         ]
       },
       {
@@ -3160,9 +3169,9 @@
       {
         "name": "FX_RATE",
         "fields": [
-          "RATE",
           "TARGET_CURRENCY",
-          "SOURCE_CURRENCY"
+          "SOURCE_CURRENCY",
+          "RATE"
         ]
       },
       {
